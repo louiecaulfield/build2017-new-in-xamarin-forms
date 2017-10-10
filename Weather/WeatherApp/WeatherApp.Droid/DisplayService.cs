@@ -79,7 +79,7 @@ namespace WeatherApp.Droid
         public bool DisplayPresent { get { return Display != null; } }
 
         Activity activity;
-        public void Init(Activity activity)
+        public DisplayService(Activity activity)
         {
             this.activity = activity;
             displayManager = (DisplayManager)activity.GetSystemService(Context.DisplayService);

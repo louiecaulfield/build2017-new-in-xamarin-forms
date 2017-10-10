@@ -26,8 +26,7 @@ namespace WeatherApp.Droid
         {
             base.OnCreate(bundle);
 
-            _display_service = new DisplayService();
-            _display_service.Init(this);
+            _display_service = new DisplayService(this);
             SetContentView(Resource.Layout.Main);
 
             FragmentTransaction ft = FragmentManager.BeginTransaction();
